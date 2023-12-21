@@ -1,6 +1,7 @@
 package com.bruno.task.management.services;
 
 import com.bruno.task.management.dtos.UserDTO;
+import com.bruno.task.management.dtos.UserRegisterDTO;
 import com.bruno.task.management.entities.User;
 
 import java.util.List;
@@ -20,4 +21,8 @@ public interface UserService {
 
 
     UserDTO userById(Long id);
+
+    String login(UserDTO dto);
+
+    void register(UserRegisterDTO dto);
 }
